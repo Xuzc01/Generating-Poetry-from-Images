@@ -39,59 +39,14 @@
 ## 实验结果
 
 ### 1.**分类报告**
-![分类报告](./src/result/ClassReport.png)
-模型对二分类任务的分类性能表现可以通过以下四个关键指标进行分析：**精确率（Precision）**、**召回率（Recall）**、**F1-Score**以及**支持度（Support）**。此外，还有宏平均（Macro Avg）和加权平均（Weighted Avg）。
 
-#### 1. **类别 0 (非仇恨言论)**
-   - **精确率（Precision）**：96.60%
-   - **召回率（Recall）**：98.44%
-   - **F1-Score**：97.52%
-   - **支持度（Support）**：331,897
-
-   模型在识别非仇恨言论上表现非常好，精确率、召回率和 F1-Score 都很高，表明模型能有效区分正常言论，并且很少将仇恨言论误分类为正常言论。
-
-#### 2. **类别 1 (仇恨言论)**
-   - **精确率（Precision）**：77.32%
-   - **召回率（Recall）**：60.49%
-   - **F1-Score**：67.88%
-   - **支持度（Support）**：29,078
-
-   对仇恨言论的识别能力相对较低，精确率为77.32%，而召回率仅为60.49%，意味着模型虽然在预测仇恨言论时较为准确，但可能漏掉了部分仇恨言论（即较低的召回率）。
-
-#### 3. **宏平均 (Macro Avg)**
-   - **精确率（Precision）**：86.96%
-   - **召回率（Recall）**：79.47%
-   - **F1-Score**：82.70%
-   - **支持度（Support）**：360,975
-
-   宏平均计算每个类别的指标平均值，未考虑类别的不平衡。它显示出模型对两个类别的整体表现，精确率和召回率适中，表明在处理类别不平衡时，模型的表现有一定的局限性。
-
-#### 4. **加权平均 (Weighted Avg)**
-   - **精确率（Precision）**：95.05%
-   - **召回率（Recall）**：95.39%
-   - **F1-Score**：95.13%
-   - **支持度（Support）**：360,975
-
-   加权平均考虑了每个类别的样本量，通过支持度对指标进行加权平均。这一结果表明模型的总体性能表现优异，特别是对大多数样本的正确分类。
-
-### 2.**ROC**
-![ROC](./src/result/ROC.png) 
-   - ROC曲线越靠近左上角，模型的性能越好。结果中的曲线非常接近左上角，说明模型的分类效果非常好。
-   - AUC（Area Under the Curve）值为0.9667，AUC的值介于0.5和1之间。AUC越接近1，说明模型的性能越好。0.9667是一个非常高的AUC值，表明模型具有很强的区分能力。
-   - 综合来看，这张ROC曲线图表明这个分类模型的性能非常优秀。它能够很好地将正样本和负样本区分开来，具有很高的准确率和泛化能力。
 
 ## 参考
-- 模型参考：[kaggle](https://www.kaggle.com/code/thousandvoices/simple-lstm/script)
+- 参考文献：[Bei Liu, Jianlong Fu, Makoto P. Kato, and Masatoshi Yoshikawa. 2018. Beyond Narrative Description: Generating Poetry from Images by Multi-Adversarial Training. ](https://arxiv.org/pdf/1804.08473)   
 
 
 ## 使用说明
-1. 本项目提供了完整的已训练模型，包括情感分类模型和仇恨言论检测模型。用户可通过以下链接下载并使用这些模型：
-   - [点击此处下载模型（跳转至 Kaggle 下载页面）](https://www.kaggle.com/models/wenhao02/nlp)
+1. [点此下载模型](https://github.com/Xuzc01/Generating-Poetry-from-Images/edit/main/README.md)，并放到code/model/目录下：
+   
+2. 本项目仅支持Linux系统：
 
-2. 为方便用户进行测试和使用，本项目开发了一个简易的用户界面。操作步骤如下：
-   - 安装项目所需的依赖库。
-   - 运行 `app.py` 文件以启动本地服务器。
-
-3. 本项目的主要目的是开发仇恨言论检测模型。然而，在界面开发阶段，由于仇恨言论检测模型尚未完全整合，项目暂时使用了情感分类模型作为替代，以方便进行接口开发和测试。如果您对情感分类模型感兴趣，可以在该[代码仓库](https://github.com/AuroraEchos/SetimentAnalysis)中找到完整的说明和使用指南。
-
-4. 所有与仇恨言论检测相关的代码均存放于 `src` 文件夹中。

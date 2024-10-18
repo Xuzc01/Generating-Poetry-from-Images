@@ -49,7 +49,7 @@
 
 
 ## 使用说明
-1. [点此下载模型](https://huggingface.co/ZicXu/img2poem)，并放到code/model/目录下：
+1. [点此下载模型](https://huggingface.co/ZicXu/img2poem)，并放到code/model/目录下（测试可用code/src/test.py）：
    
 2. 本项目仅支持Linux系统,Windows可通过Docker进行测试：
 - 执行：

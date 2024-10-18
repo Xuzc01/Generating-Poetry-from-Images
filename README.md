@@ -48,5 +48,13 @@
 ## 使用说明
 1. [点此下载模型](https://github.com/Xuzc01/Generating-Poetry-from-Images/edit/main/README.md)，并放到code/model/目录下：
    
-2. 本项目仅支持Linux系统：
-
+2. 本项目仅支持Linux系统,Windows可通过Docker进行测试：
+- 执行：
+  
+```bash
+docker pull zichangxu/img2poem 
+```
+运行容器后，切换到app/src/下，执行以下命令，将对images/test.jpg进行预测
+```bash
+python test.py
+```

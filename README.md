@@ -35,6 +35,9 @@
 ![2(2)](https://github.com/user-attachments/assets/b6530648-0490-4e58-9818-a367dd729912)
 
 3. **MultiM-Poem (Ex)**：通过训练好的嵌入模型，对MultiM-Poem通过相似度扩展并去除冗余而来
+- 各数据集详细情况如下：
+
+ ![3](https://github.com/user-attachments/assets/54f92bca-13e2-49f4-8328-b96177475ec3)
 
 ## 实验结果
 
@@ -46,7 +49,7 @@
 
 
 ## 使用说明
-1. [点此下载模型](https://github.com/Xuzc01/Generating-Poetry-from-Images/edit/main/README.md)，并放到code/model/目录下：
+1. [点此下载模型](https://huggingface.co/ZicXu/img2poem)，并放到code/model/目录下：
    
 2. 本项目仅支持Linux系统,Windows可通过Docker进行测试：
 - 执行：

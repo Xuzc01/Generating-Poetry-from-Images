@@ -6,7 +6,7 @@
 3. [模型结构](#模型结构)
 4. [所用数据集](#所用数据集)
 5. [实验结果](#实验结果)
-6. [参考](#参考)
+6. [参考文献](#参考文献)
 7. [使用说明](#使用说明)
 
 ## 项目简介
@@ -41,7 +41,7 @@
 ### 1.**分类报告**
 
 
-## 参考
+## 参考文献
 - 参考文献：[Bei Liu, Jianlong Fu, Makoto P. Kato, and Masatoshi Yoshikawa. 2018. Beyond Narrative Description: Generating Poetry from Images by Multi-Adversarial Training. ](https://arxiv.org/pdf/1804.08473)   
 
 

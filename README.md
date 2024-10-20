@@ -41,6 +41,10 @@
 
 ## 实验结果
 性能对比，其中Show and Tell和SeqGAN都曾是Image Caption相关性能最优模型
+- BLEU：评价模型生成内容于人工标注答案的相似度
+- Novelty:评价模型生成内容的新颖性（从其他地方引用程度）
+- Overall：计算平均分
+  
 | Method | Relevance | Novelty-2 | Novelty-3 |BLEU-1 |BLEU-2 |BLEU-3 |Overall |
 | :------:| :------: | :------: | :-----: |:-----: |:-----: |:-----: |:-----: |
 | Show and Tell | 1.91 | 48.09 | 81.37|12.64|3.34|0.8|34.34|

@@ -40,8 +40,12 @@
  ![3](https://github.com/user-attachments/assets/54f92bca-13e2-49f4-8328-b96177475ec3)
 
 ## 实验结果
-
-
+性能对比，其中Show and Tell和SeqGAN都曾是Image Caption相关性能最优模型
+| Method | Relevance | Novelty-2 | Novelty-3 |BLEU-1 |BLEU-2 |BLEU-3 |Overall |
+| :------:| :------: | :------: | :-----: |:-----: |:-----: |:-----: |:-----: |
+| Show and Tell | 1.91 | 48.09 | 81.37|12.64|3.34|0.8|34.34|
+| SeqGAN | 2.03 | 47.52 | 82.32 |13.40 |3.72|0.76|44.95|
+| I2pGAN | 2.25 | 54.32 | 85.37 |14.25|3.84|0.94|77.23|
 
 
 ## 参考文献

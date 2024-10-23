@@ -65,7 +65,7 @@
 ```bash
 docker pull zichangxu/img2poem 
 ```
-运行容器后，切换到app/src/下，执行以下命令，将对images/test.jpg进行预测
+运行容器后，切换到app/src/下，执行以下命令，将默认对images/test.jpg进行预测
 ```bash
 python test.py
 ```
